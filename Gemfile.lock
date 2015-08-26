@@ -1,4 +1,22 @@
 GIT
+  remote: git://github.com/eritiro/devise-actioncable.git
+  revision: 5e90682ef8418f139891f826785640290ac45e25
+  specs:
+    devise-actioncable (0.1.0)
+
+GIT
+  remote: git://github.com/eritiro/devise.git
+  revision: 4186857efef9715cac41670b4997d79c252acb35
+  specs:
+    devise (3.5.2)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      responders
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
+
+GIT
   remote: git://github.com/rails/actioncable.git
   revision: b91d0e8f7d309500df79bffa9017fa2d9fbf2c05
   specs:
@@ -50,7 +68,7 @@ GIT
 
 GIT
   remote: https://github.com/rack/rack
-  revision: dde5b68b8265f03114c111a0c39000b3b8af6485
+  revision: cb2fdee2c553374effe4b50ac13c3122bfccf49d
   specs:
     rack (2.0.0.alpha)
       json
@@ -123,6 +141,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    bcrypt (3.1.10)
     builder (3.2.2)
     byebug (6.0.2)
     celluloid (0.16.0)
@@ -168,6 +187,8 @@ GEM
     multi_json (1.11.2)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    orm_adapter (0.5.0)
+    puma (2.13.4)
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
     rails-dom-testing (1.0.7)
@@ -178,6 +199,8 @@ GEM
       loofah (~> 2.0)
     rake (10.4.2)
     redis (3.2.1)
+    responders (2.1.0)
+      railties (>= 4.2.0, < 5)
     sass (3.4.17)
     spring (1.3.6)
     sqlite3 (1.3.10)
@@ -192,6 +215,8 @@ GEM
     uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    warden (1.2.3)
+      rack (>= 1.0)
     websocket-driver (0.6.2)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
@@ -204,8 +229,11 @@ DEPENDENCIES
   arel!
   byebug
   coffee-rails (~> 4.1.0)
+  devise!
+  devise-actioncable!
   jbuilder (~> 2.0)
   jquery-rails
+  puma
   rack (~> 2.x)!
   rack-test!
   rails (= 5.0.0.alpha)!

@@ -11,6 +11,9 @@ gem 'sprockets', github: 'rails/sprockets', branch: 'master'
 gem 'sprockets-rails', github: 'rails/sprockets-rails', branch: 'master'
 gem 'sass-rails', github: 'rails/sass-rails', branch: 'master'
 gem 'actioncable', github: 'rails/actioncable'
+gem 'puma'
+gem 'devise', github: 'eritiro/devise'
+gem 'devise-actioncable', github: 'eritiro/devise-actioncable'
 
 gem 'sqlite3'
 # Use Uglifier as compressor for JavaScript assets
