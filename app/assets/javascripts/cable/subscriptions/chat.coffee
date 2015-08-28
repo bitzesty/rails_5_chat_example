@@ -14,4 +14,4 @@ App.chat = App.cable.subscriptions.create "ChatChannel",
 
   received: (data) ->
     if(data.type == "wrote")
-      $("#channel tbody").html("<tr>" + data.user.email + "<td>"+ data.message +"</td></tr>");
+      $("#chat-content").append("<tr><td></td><td>#{data.data.text}</td></tr>");

@@ -5,7 +5,8 @@ module ApplicationCable
 
 
     def connect
-      authenticate_user!
+      logger.debug current_user
+      #authenticate_user!
     end
   end
 end
