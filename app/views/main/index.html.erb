@@ -1,33 +1,42 @@
-<h1>List of chat channels</h1>
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% Channel.all.each do |channel| %>
-      <tr>
-        <td><%= channel.name %></td>
-        <td><a href="#" data-channel-id="<%= channel.id%>" class="join-channel">Join</a></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<br/>
+<div>
+  <div class="row">
+    <div class="col-md-3">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Channels</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% Channel.all.each do |channel| %>
+            <tr>
+              <td><%= channel.name %></td>
+              <td><a href="#" data-channel-id="<%= channel.id%>" class="join-channel">Join</a></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-9">
+      <div id="channel">
+        <table  class="table">
+          <thead>
+            <tr>
+              <th class="col-md-1">Name</th>
+              <th class="col-md-5">Message</th>
+            </tr>
+          </thead>
+          <tbody>
 
-<div id="channel">
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Message</th>
-      </tr>
-    </thead>
-    <tbody>
+          </tbody>
+        </table>
+        <label for="message">Message</label><br/>
 
-    </tbody>
-  </table>
-  <textarea id="message"></textarea>
-  <button id="send">Send</button>
+        <textarea id="message"></textarea><br/>
+        <button id="send" class="btn btn-default">Send</button>
+      </div>
+    </div>
+  </div>
 </div>

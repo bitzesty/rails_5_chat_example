@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: git://github.com/eritiro/devise.git
-  revision: 4186857efef9715cac41670b4997d79c252acb35
+  revision: 90331d52d913ce1eef7e0ec5b40f9c42cb9c1284
   specs:
     devise (3.5.2)
       bcrypt (~> 3.0)
@@ -68,7 +68,7 @@ GIT
 
 GIT
   remote: https://github.com/rack/rack
-  revision: cb2fdee2c553374effe4b50ac13c3122bfccf49d
+  revision: dd8afc900c9c989a466b417dfb48499963efd5f0
   specs:
     rack (2.0.0.alpha)
       json
