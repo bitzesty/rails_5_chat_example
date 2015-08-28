@@ -15,3 +15,17 @@
 //= require turbolinks
 //= require_tree .
 //= require_tree ./cable/subscriptions
+
+
+$(function(){
+  $(".join-channel").click(function(){
+    App.chat.join($(this).data("channel-id"));
+    $("#channel tbody").html("");
+    $("#channel").show();
+  });
+
+  $("#send").click(function(){
+    App.chat.write($("#message").val());
+  });
+
+});

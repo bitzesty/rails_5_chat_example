@@ -81,7 +81,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails
-  revision: a70e6f1cb3108d7644ea87ecfa1e914b6bd1eee8
+  revision: 479217ca34e3eb1f86fa8e8358bdde9de16effaf
   specs:
     actionmailer (5.0.0.alpha)
       actionpack (= 5.0.0.alpha)
@@ -113,7 +113,7 @@ GIT
       activesupport (= 5.0.0.alpha)
       arel (= 7.0.0.alpha)
     activesupport (5.0.0.alpha)
-      concurrent-ruby (~> 0.9.0)
+      concurrent-ruby (~> 0.9.1)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
       method_source
